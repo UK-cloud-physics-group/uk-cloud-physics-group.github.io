@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>UK Early-Career Cloud Physics Group</title> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .menu-symposium {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner" style="background: url('img/clouds_2025_lilli_freischem-landscape.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <div style="text-align: center;">
+              <h2 class="add-top-margin-small">Join us!</h2>
+              <h2 class="add-top-margin-small">UK Early-Career Cloud Physics Group Symposium</h2>
+                <h2 class="add-top-margin-small">19–20 March 2026</h2>
+              <h2 class="add-top-margin-small">Department of Physics, University of Oxford</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start content-->
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <!-------------------------------------------------------------------------------------------->
+            <h2>About</h2><hr>
+            <p> A two-day research symposium on cloud physics by and for early-career researchers.
+            </p><p> This event grew out of a simple observation from our own PhD experience: research groups across the UK don’t often have the opportunity to engage with one another’s work. We thought: why not get everyone together and change that?
+            </p><p> The event starts at midday on the Thursday and will finish by 1 PM the following day. Since our aim is building community, there will be plenty of time for discussions, and we are inviting all participants to give a talk and bring a small poster.
+            </p><p> We welcome contributions across all aspects of cloud physics. That means research topics at all scales, from cloud and aerosol microphysics to global and climate scale interactions. And approaches can include observations, modelling and machine and deep learning or research tools development.
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <h2>Register now</h2><hr>
+            <p> Registration closed at 23:59 UCT 8 March 2026. It is still possible to attend virtually, to do so please submit the expression of interest form as instructed below.
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <div id="presentation-guidelines-container"></div>
+            <script>
+            fetch("presentation_guidelines")
+              .then(response => response.text())
+              .then(html => {
+                document.getElementById("presentation-guidelines-container").innerHTML = html;
+              });
+            </script>
+            <!-------------------------------------------------------------------------------------------->
+            <h2>Event agenda</h2><hr>
+            <p>
+              Details coming soon.
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <h2>More details</h2><hr>
+            <p><strong>When?</strong> 19-20 March 2026, from 12 PM Thursday the 19th, to 1 PM Friday the 20th.
+            </p><p><strong>Where?</strong> Department of Physics, University of Oxford, Oxford, UK.
+            </p><p><strong>What?</strong> Keynote lectures, lighning talks, poster sessions, breakout discussions and a social dinner.
+            </p><p><strong>Am I studying cloud physics?</strong>  Do you think you and/or your research would benefit from attending this symposium? Then yes! Specific details on the topics covered are provided above.
+            </p><p><strong>Am I early career?</strong> Are you currently studying a postgraduate research degree or are within 10 years of having completed your PhD (excluding career breaks)? Then yes!
+            </p><p><strong>What will it cost?</strong> Registration is £80, and includes all your meals for the duration of the event. That's a dinner and two lunches, the second of which will be possible to take away with you on the train. Registration closed at 23:59 UCT 8 March 2026.
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <h2>Accommodation</h2><hr>
+            <p> This event is happening during the term break, that means many colleges have student rooms available to book. <a href="https://www.universityrooms.com/en-GB/search/accommodation/in/oxford?from=19/03/2026&to=20/03/2026&rooms=1&adults=1&curr=GBP" target="_blank">Check them out here.</a>
+            </p><p> There are also a number of hotels within easy bus/walking distance of the Physcis Department and the dinner location (the Cherwell Boathouse).
+              <a href="https://maps.app.goo.gl/8pbKZ137mtYtxdgp9" target="_blank">We've collected some all on one map here, including the department and dinner locations.</a>
+            </p>       
+            <!-------------------------------------------------------------------------------------------->
+            <h2>Attending virtually</h2><hr>
+            <p> The point of this meeting is to build community, so we strongly encourage in-person attendance. That said, we want those who cannot attend in Oxford to be visible to the broader community. So virtual registrants are invited to submit an A3 poster introducing their research which will be shown at the meeting. Interactive virtual participation however is unlikely to be possible.
+            </p><p> Submit the below expression of interest and we will keep you up to date on how to submit your contibutions.
+            </p><p> <a href="https://forms.office.com/e/RhVd4CfkmN" target="_blank" style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;"> Virtual participation Expression of Interest Form</a>
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <div id="sponsors-container"></div>
+            <script>
+              fetch("sponsors.html")
+                .then(response => response.text())
+                .then(html => {
+                  document.getElementById("sponsors-container").innerHTML = html;
+                });
+            </script>
+            <!-------------------------------------------------------------------------------------------->
+            <h2>Think this is great? Share the poster below with your network!</h2><hr>
+            <p><a href="img/Register UK Early-Career Cloud Physics Symposium.pdf" download style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;">Download flyer (.pdf)</a></p> 
+            <p><a href="img/Register UK Early-Career Cloud Physics Symposium.png" download style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;">Download flyer (.jpg)</a></p> 
+            <p><a href="img/Print Register UK Early-Career Cloud Physics Symposium.pdf" download style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;">Print version</a></p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container"></div>
+</body>
+
+</html>

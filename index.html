@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>UK Early-Career Cloud Physics Group</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .menu-home {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner" style="background: url('img/clouds_2025_lilli_freischem-landscape.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">A community-led working group for cloud physics in the UK</h2>
+            <p class="text">
+              This working group and symposium grew out of a simple observation from our own PhD experience: research groups across the UK don’t often have the opportunity to engage with one another’s work. We thought: why not get everyone together and change that?
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="text-only">Mission statement</h2>
+            <hr>
+            <p class="text">
+              Our purpose is to facilitate collaboration and community among early-career<sup>1</sup> cloud physicists in the UK<sup>2</sup>. 
+              We highlight new and interesting work in cloud physics and connect people with similar research interests.
+              We are inclusive, informal, and as accessible as possible. 
+            </p>
+            <p class="text">
+              <sup>1</sup> <small>We define early-career as ‘within 10 years of having completed your highest academic qualification’. 
+                If it’s been more than 10 years but you’ve had significant career pauses for any reason (e.g. caring responsibilities), count yourself in.</small>
+            </p>
+                 <p class="text">
+              <sup>2</sup> <small>Not limited to UK citizens or UK institutional affiliations, but a snapshot of ‘who’s in the UK at the moment’. If you’ll be here on one of our event dates, you’re invited.</small>
+            </p>
+     
+            <!-------------------------------------------------------------------------------------------->
+            <h2 id="text-only">Research focus</h2>
+            <hr>
+            <p class="text">
+              We welcome contributions across all aspects and scales of cloud physics. Topics include cloud microphysics, aerosol-cloud interactions, turbulence and dynamics, mesoscale organisation, circulation coupling, and cloud-climate feedbacks. Studies spanning a wide range of spatial and temporal scales are encouraged, from microscale process-level investigations and case studies to large-scale, global or climate-scale analyses. Theoretical, observational, laboratory, and modelling approaches are all welcome, as well as machine learning and research tools development.
+            </p>
+
+            <h2 id="text-only">How to get involved</h2>
+            <hr>
+            <p class="text">
+              We maintain a <a href="https://uk-cloud-physics-group.github.io/group-webpage/members.html">member directory</a>, an active <a href="https://gaggle.email/join/uk-early-career-cloud-physics@gaggle.email">email list</a>, 
+              and a <a href='https://uk-cloud-physics-group.github.io/group-webpage/calendar.html'>calendar</a> of upcoming events and opportunities. As well as the yearly symposium, we run bimonthly online seminars to showcase current research in cloud physics.
+              If you’d like to present your work, please register your interest <a href='not yet!'>here</a>.
+            </p>
+
+
+            <!-------------------------------------------------------------------------------------------->
+            <div id="sponsors-container"></div>
+            <script>
+              fetch("sponsors.html")
+                .then(response => response.text())
+                .then(html => {
+                  document.getElementById("sponsors-container").innerHTML = html;
+                });
+            </script>
+            <!------------------------------------------------------------------------>
+
+          </div>
+        </div>
+        <!--End Text Only-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <!--End Content-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="footer-container">
+  </div>
+</body>
+
+</html>

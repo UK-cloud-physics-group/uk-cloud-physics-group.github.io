@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>UK Early-Career Cloud Physics Group</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .menu-home {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner" style="background: url('img/clouds_2025_lilli_freischem-landscape.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">A community-led working group for cloud physics in the UK</h2>
+            <p class="text">
+              This working group and symposium grew out of a simple observation from our own PhD experience: research groups across the UK don’t often have the opportunity to engage with one another’s work. We thought: why not get everyone together and change that?
+            </p>
+            <p class="text">
+              The aim is to strengthen knowledge exchange, collaboration and community across UK institutions.
+            </p>
+            <p class="text">
+              Although our initial focus is early career researchers, we hope this effort helps foster more frequent lively and productive interactions amongst researchers of all career stages in our field.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="text-only">The symposium</h2>
+            <hr>
+            <p class="text">
+              To kick-off, we’re hosting a two-day research symposium at the University of Oxford, and you're invited!
+            </p>
+            <p class="text">
+              We hope this symposium helps revive subject-specific domestic meetings in our field. These meetings are vital to the continued strength of cloud and atmospheric physics research in the UK. They introduce new ideas and collaborators, help shape research directions, and support researchers in exploring and planning their future careers.
+            </p>
+            <p class="text">
+              If you’re interested in attending, or engaging virtually, <a href="https://forms.office.com/e/RhVd4CfkmN" target="_blank">sign-up now</a> and we’ll notify you when registration opens.
+            </p>
+            <p class="text">
+              Got questions, comments or ideas? Reach out! We’d love to have you involved. Otherwise, thanks for your interest, can’t wait to see you in Oxford in March!
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <h2 id="text-only">Research focus</h2>
+            <hr>
+            <p class="text">
+              We welcome contributions across all aspects of cloud physics. Topics include cloud microphysics, aerosol-cloud interactions, turbulence and dynamics, mesoscale organisation, circulation coupling, and cloud-climate feedbacks. Studies spanning a wide range of spatial and temporal scales are encouraged, from microscale process-level investigations and case studies to large-scale, global or climate-scale analyses. Theoretical, observational, and modelling approaches are all welcome, as well as machine and deep learning or research tools development.
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <div id="sponsors-container"></div>
+            <script>
+              fetch("sponsors.html")
+                .then(response => response.text())
+                .then(html => {
+                  document.getElementById("sponsors-container").innerHTML = html;
+                });
+            </script>
+            <!------------------------------------------------------------------------>
+            <h2 id="text-only">Beyond the symposium</h2>
+            <hr>
+            <p class="text">
+              We hope the 2026 symposium is the first of many. But beyond these in-person events, we hope to progress the goals of the UK Early-Career Cloud Physics Group in other ways. Currently, our ideas include: regular seminars, reading groups, news and opportunities collated on this website, and more.
+            </p>
+            <p class="text">
+              But what do you think? We’d love to hear your thoughts and have you involved.
+            </p>
+            <p class="text">
+            </p>
+          </div>
+        </div>
+        <!--End Text Only-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <!--End Content-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="footer-container">
+  </div>
+</body>
+
+</html>
