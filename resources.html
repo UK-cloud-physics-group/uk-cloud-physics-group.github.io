@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+  <title>Resources - UK Early-Career Cloud Physics Group</title> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/accordion.js"></script>
+  <style>
+    .menu-resources {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+
+    .bottom-two-column {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .bottom-two-column .column {
+      flex: 1 1 320px;
+    }
+
+    .bottom-two-column img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+  /* Accordion styles for resources page */
+  .accordion-header {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #f5f8fa;
+    margin: 8px 0;
+    border-radius: 6px;
+    transition: background-color 0.3s, border-left 0.3s;
+    font-weight: 600;
+    border-left: 4px solid #6c757d;
+  }
+
+  .accordion-header:hover {
+    background-color: #e9ecef;
+    border-left: 4px solid #495057;
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 18px 20px;
+    margin: 5px 0 15px 0;
+    background-color: #fefefe;
+    border-left: 4px solid #dee2e6;
+    border-radius: 0 6px 6px 0;
+    text-align: justify;
+  }
+
+  .accordion-content.active {
+    display: block;
+  }
+
+  .resource-category {
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 8px;
+  }
+
+  .resource-item {
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+  }
+
+  .resource-item:last-child {
+    border-bottom: none;
+  }
+
+  .resource-link {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .resource-link:hover {
+    text-decoration: underline;
+    color: #007bff;
+  }
+
+  .resource-description {
+    color: #495057;
+    font-size: 0.95em;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  </style>
+</head>
+
+<!-------------------------------------------------------------------------------------------->
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!-- start header -->
+    <div class="banner" style="background: url('img/clouds_2025_lilli_freischem-landscape.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <div style="text-align: center;">
+              <h2 class="add-top-margin-small">UK Early-Career Cloud Physics Group</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+<!-------------------------------------------------------------------------------------------->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="text-only">Resources</h2>
+            <hr>
+
+            <p>Below you can find a collection of selected resources (tbc).</p>
+
+            <h3>Section1</h3>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection1.1
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <span class="resource-category">Item1.1.1:</span>
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <span class="resource-category">Item1.1.2:</span>
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection1.2
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection1.3
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3>Section2</h3>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection2.1
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection2.2
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3>Section3</h3>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection3.1
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-entry">
+              <div class="accordion-header">
+                SubSection3.2
+              </div>
+              <div class="accordion-content">
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some subtitle with url link</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+                <div class="resource-item">
+                  <a href="#" class="resource-link">Some Item</a>
+                  <p class="resource-description">Description.</p>
+                </div>
+              </div>
+            </div>
+
+            <p>If you have suggestions for additional resources, please contact us [is there a group contact form?].</p>
+
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Content-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="footer-container">
+    </div>
+</body>
+
+</html>
