@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+  <title>UK Early-Career Cloud Physics Group</title> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <!--    ADDED LATEX SUPPORT WITH KATEX, FOR FUTURE USE
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+          onload="renderMathInElement(document.body);"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .menu-seminars {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+
+    .bottom-two-column {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .bottom-two-column .column {
+      flex: 1 1 320px;
+    }
+
+    .bottom-two-column img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+  /* Collapsible seminar styles */
+  .seminar-header {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    font-weight: 600;
+  }
+
+  .seminar-header:hover {
+    background-color: #f0f0f0;
+  }
+
+  .seminar-abstract {
+    display: none;
+    padding: 15px 20px;
+    margin: 5px 0 15px 0;
+    background-color: #f8f8f8;
+    border-left: 3px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    text-align: justify;
+  }
+
+  .seminar-abstract.active {
+    display: block;
+  }
+  
+  .seminar-meta {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #333;
+  }
+  
+  .seminar-date {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .seminar-host {
+    font-style: italic;
+    color: #333;
+  }
+  </style>
+  <script>
+  $(document).ready(function() {
+    $('.seminar-header').click(function() {
+      $(this).next('.seminar-abstract').toggleClass('active');
+    });
+  });
+  </script>
+</head>
+
+<!-------------------------------------------------------------------------------------------->
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!-- start header -->
+    <div class="banner" style="background: url('img/clouds_2025_lilli_freischem-landscape.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <div style="text-align: center;">
+              <h2 class="add-top-margin-small">UK Early-Career Cloud Physics Group</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+<!-------------------------------------------------------------------------------------------->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="text-only">Seminars</h2>
+            <hr>
+
+            <p>We run an online seminar series as an opportunity to present work in a flexible and welcoming environment.</p>
+            
+            <h3>Upcoming Seminars</h3>
+          <div class="seminar-meta"><span class="seminar-date">TBC</span>: <span class="seminar-host">TBC</span></div>
+
+          <h3>Previous Seminars</h3>
+          <div class="seminar-meta"><span class="seminar-date">29<sup>th</sup> May 2026</span> - <span class="seminar-host">Host: Koh Kawaguchi, Imperial College London</span></div>
+
+          <div class="seminar-entry">
+            <div class="seminar-header">
+              <b>Oliver Driver:</b> Transient contrails are valuable—even if they're unimportant.
+            </div>
+            <div class="seminar-abstract">
+              <p><i>Oliver Driver, Imperial College London</i></p>
+              
+              <p>Sometimes, the ice clouds that form from aircraft exhaust (contrails) mix away, because the ambient air is too dry to sustain them. These are the transient contrails we see trailing only a few seconds behind an aircraft. Transient contrail coverage is too low to exert a significant radiative forcing—unlike persistent contrails, whose warming forcing is comparable in magnitude to aviation CO<sub>2</sub> emissions.</p>
+              
+              <p>However, transient contrails are a unique opportunity for direct observations of the mixing process that all contrails experience in their formation stage. By comparing transient contrail lifetimes from a bulk microphysics model and ground camera measurements, transient contrails are also shown to be chiefly sensitive to the ambient meteorology: the temperature and the hard-to-measure relative humidity. So transient contrail formation is a valuable natural experiment. We use these measurements to test the contrail model, and for a proof-of-concept retrieval of the humidity at cruise altitude.</p>
+            </div>
+          </div>
+
+          <div class="seminar-entry">
+            <div class="seminar-header">
+              <b>Emily Van de Koot:</b> Dynamical controls on tropical precipitation-minus-evaporation responses to cloud radiative changes.
+            </div>
+            <div class="seminar-abstract">
+              <p><i>Emily Van de Koot, Imperial College London</i></p>
+
+              <p>While a range of processes have been linked to uncertainty in tropical precipitation minus evaporation (P−E) changes, growing evidence links cloud-radiative changes to inter-model spread. Radiation-locking studies further demonstrate strong sensitivities of circulation and P−E to cloud-radiative changes in aquaplanet models; however, the physical mechanisms linking CO<sub>2</sub>-driven cloud-radiative changes to tropical P−E responses remain poorly understood.</p>
+              
+              <p>Here, we use the radiation-locking technique to elucidate these mechanisms in a climate model configured with realistic continents, sea ice, and a seasonal cycle, with the ocean represented by a slab ocean model with prescribed climatological q-fluxes. We introduce a novel analytical framework in which the P-E response is analysed as a function of climatological P-E, enabling direct comparison with thermodynamic scaling arguments.</p>
+              
+              <p>Despite inducing weak surface warming, CO<sub>2</sub>-driven cloud-radiative changes substantially modify the tropical hydrological response, driving a robust wet-gets-drier, dry-gets-wetter P−E pattern that opposes the canonical wet-gets-wetter, dry-gets-drier signal associated with climate warming. Moisture and moist static energy budget analyses show that this response is driven by a weakening of the tropical overturning circulation associated with enhanced upper-tropospheric cloud-radiative heating. Sea surface temperature pattern changes induce additional P−E responses, including a poleward shift of precipitation maxima over the Indian and western Pacific Oceans. Our results demonstrate that circulation changes strongly shape tropical P−E responses to cloud-radiative changes, and that the balance between dynamic and thermodynamic responses may be a key control on inter-model spread. We further highlight the coupling between cloud-radiative heating and latent heat release as critical for the resulting circulation response.</p>
+            </div>
+          </div>
+            
+<hr>
+    
+    
+        </div>
+      </div>
+    </div>
+    <!--End Content-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="footer-container">
+  </div>
+</body>
+
+</html>
