@@ -18,6 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/accordion.js"></script>
   <style>
     .menu-seminars {
       color: rgb(255, 255, 255) !important;
@@ -42,8 +43,8 @@
       display: block;
     }
   
-  /* Collapsible seminar styles */
-  .seminar-header {
+  /* Accordion styles for this page */
+  .accordion-header {
     cursor: pointer;
     padding: 10px 20px;
     border-bottom: 1px solid #eee;
@@ -54,11 +55,11 @@
     font-weight: 600;
   }
 
-  .seminar-header:hover {
+  .accordion-header:hover {
     background-color: #f0f0f0;
   }
 
-  .seminar-abstract {
+  .accordion-content {
     display: none;
     padding: 15px 20px;
     margin: 5px 0 15px 0;
@@ -68,7 +69,7 @@
     text-align: justify;
   }
 
-  .seminar-abstract.active {
+  .accordion-content.active {
     display: block;
   }
   
@@ -88,13 +89,6 @@
     color: #333;
   }
   </style>
-  <script>
-  $(document).ready(function() {
-    $('.seminar-header').click(function() {
-      $(this).next('.seminar-abstract').toggleClass('active');
-    });
-  });
-  </script>
 </head>
 
 <!-------------------------------------------------------------------------------------------->
@@ -134,11 +128,11 @@
           <h3>Previous Seminars</h3>
           <div class="seminar-meta"><span class="seminar-date">29<sup>th</sup> May 2026</span> - <span class="seminar-host">Host: Koh Kawaguchi, Imperial College London</span></div>
 
-          <div class="seminar-entry">
-            <div class="seminar-header">
+          <div class="accordion-entry">
+            <div class="accordion-header">
               <b>Oliver Driver:</b> Transient contrails are valuable—even if they're unimportant.
             </div>
-            <div class="seminar-abstract">
+            <div class="accordion-content">
               <p><i>Oliver Driver, Imperial College London</i></p> 
               
               <p>Sometimes, the ice clouds that form from aircraft exhaust (contrails) mix away, because the ambient air is too dry to sustain them. These are the transient contrails we see trailing only a few seconds behind an aircraft. Transient contrail coverage is too low to exert a significant radiative forcing—unlike persistent contrails, whose warming forcing is comparable in magnitude to aviation CO<sub>2</sub> emissions.</p>
@@ -147,11 +141,11 @@
             </div>
           </div>
 
-          <div class="seminar-entry">
-            <div class="seminar-header">
+          <div class="accordion-entry">
+            <div class="accordion-header">
               <b>Emily Van de Koot:</b> Dynamical controls on tropical precipitation-minus-evaporation responses to cloud radiative changes.
             </div>
-            <div class="seminar-abstract">
+            <div class="accordion-content">
               <p><i>Emily Van de Koot, Imperial College London</i></p>
 
               <p>While a range of processes have been linked to uncertainty in tropical precipitation minus evaporation (P−E) changes, growing evidence links cloud-radiative changes to inter-model spread. Radiation-locking studies further demonstrate strong sensitivities of circulation and P−E to cloud-radiative changes in aquaplanet models; however, the physical mechanisms linking CO<sub>2</sub>-driven cloud-radiative changes to tropical P−E responses remain poorly understood.</p>
